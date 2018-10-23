@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>858</width>
+    <height>568</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+    background-color: #f2f2ea;
+}
+
+QWidget{
+   background-color: #f2f2ea;
+   border-radius:5px; 
+}
+QPushButton{
+font: 15pt &quot;汉仪趣黑W&quot;;
+color:#574505;
+background-color:#e0d3a1;
+border-width: 1px;
+border-color:#755d07;
+border-style:solid;
+margin-left:5px;
+margin-right:5px;
+}
+QPushButton:hover{
+font: 15pt &quot;汉仪趣黑W&quot;;
+color:#e0d3a1;
+background-color:#997a05;
+border-width: 1px;
+border-color: #755d07;
+border-style:solid;
+margin-left:5px;
+margin-right:5px;
+}
+QLineEdit{
+color:#f2f2ea;
+background-color:#454545;
+height:18px;
+font:15px &quot;Calisto MT&quot;;
+padding:2px;
+}
+QTextEdit{
+color:#f2f2ea;
+background-color:#454545;
+font:15px &quot;Calisto MT&quot;;
+}
+QLabel{
+font: 15pt &quot;Optima LT DemiBold&quot;;
+color:#574505;
+}
+ QMenu::item {
+ /* sets background of menu item. set this to something non-transparent
+ if you want menu color and menu item color to be different */
+ background-color: #f2f2ea;
+ color:#755d07;
+ font: 10pt &quot;Calisto MT&quot;;
+ padding:5px 20px;
+ border-bottom:1px solid #DBDBDB;/*为菜单项之间添加横线间隔*/
+ }
+QMenu::item:selected{
+color:#f2f2ea;
+background-color:#755d07;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLineEdit" name="path">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>10</y>
+      <width>751</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browse">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="load">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Load</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="save">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="play">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Play</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>50</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stop</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>95</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Parameters</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>621</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>140</y>
+      <width>751</width>
+      <height>361</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>858</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menureverse">
+    <property name="title">
+     <string>菜单</string>
+    </property>
+    <addaction name="actionreverse"/>
+    <addaction name="actionfade"/>
+    <addaction name="actionvulomn"/>
+    <addaction name="actionresample"/>
+    <addaction name="actionola"/>
+    <addaction name="actiondtw"/>
+   </widget>
+   <addaction name="menureverse"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionreverse">
+   <property name="text">
+    <string>reverse</string>
+   </property>
+  </action>
+  <action name="actionfade">
+   <property name="text">
+    <string>fade</string>
+   </property>
+  </action>
+  <action name="actionvulomn">
+   <property name="text">
+    <string>volume</string>
+   </property>
+  </action>
+  <action name="actionresample">
+   <property name="text">
+    <string>resample</string>
+   </property>
+  </action>
+  <action name="actionola">
+   <property name="text">
+    <string>ola</string>
+   </property>
+  </action>
+  <action name="actiondtw">
+   <property name="text">
+    <string>dtw</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
