@@ -1,2 +1,3 @@
 # qt_audio
-my school project
+
+software for doing the sound processing
